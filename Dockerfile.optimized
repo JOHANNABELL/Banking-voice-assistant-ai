@@ -33,4 +33,4 @@ EXPOSE $PORT
 #EXPOSE ${PORT:-8000}
 
 # Commande de démarrage avec port dynamique
-#gunicorn app.main:app --bind 0.0.0.0:$PORT --workers 4
+gunicorn app.main:app --bind 0.0.0.0:$PORT --workers 4
